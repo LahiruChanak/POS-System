@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POS System - Customers</title>
-    <link rel="icon" href="/assets/images/POS-logo.png" />
+    <link rel="icon" href="/assets/images/pos-logo.png" />
 
     <!-- Bootstrap, fontawesome CDN links -->
     <link
@@ -31,15 +31,16 @@
         class="navbar navbar-expand-md navbar-light bg-light border-bottom border-success border-3 rounded-3 mb-4"
       >
         <div class="container-fluid">
-          <a
-            class="navbar-brand fw-bold border-2 border-end border-success pe-3"
-            href="#"
-          >
-            <i class="fa-solid fa-shop"></i>
+          <a class="navbar-brand fw-bold pe-3" href="#">
+            <img
+              src="/assets/images/pos-logo.png"
+              alt="POS Logo"
+              class="img-fluid logo"
+            />
             POS System
           </a>
           <button
-            class="navbar-toggler border-2 border-success"
+            class="navbar-toggler border-0 fs-6"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -49,10 +50,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto w-100 ms-md-3">
               <li class="nav-item">
-                <a class="nav-link active fw-semibold" href="#">
-                  <i class="bi bi-house"></i>
-                  Customers
-                </a>
+                <a class="nav-link active fw-semibold" href="#"> Customers </a>
               </li>
               <li class="nav-item">
                 <a
@@ -65,7 +63,8 @@
                 <a
                   class="nav-link fw-semibold text-success"
                   href="/pages/items.html"
-                  ><i class="bi bi-box"></i> Items</a
+                >
+                  Items</a
                 >
               </li>
               <li class="nav-item ms-md-auto">
@@ -90,7 +89,7 @@
         <div class="row label p-2 m-auto">
           <div class="col-md-12">
             <h1 class="fw-medium text-start my-auto">
-              <i class="fa-solid fa-users"></i>
+              <i class="fa-solid fa-users me-2"></i>
               Customers
             </h1>
           </div>
@@ -98,13 +97,15 @@
         <div class="row content p-1 m-auto">
           <div class="col-md-12 p-3">
             <div class="row m-auto">
-              <div class="col-md-6">
+              <div
+                class="col-md-6 border border-1 rounded-3 p-0 border-dark-subtle"
+              >
                 <h2
-                  class="fw-normal fs-5 ps-3 p-2 m-0 w-100 bg-success text-light"
+                  class="fw-normal fs-5 ps-3 p-2 m-0 w-100 bg-success rounded-top-2 text-light"
                 >
                   Customer Search
                 </h2>
-                <div class="search bg-light p-3">
+                <div class="search bg-light rounded-bottom-3 p-2">
                   <form class="px-2" action="search">
                     <div class="mb-3">
                       <input
@@ -129,18 +130,18 @@
                   </form>
                 </div>
               </div>
-              <div
-                class="col-md-6 pt-3 pt-md-0 d-flex justify-content-md-end justify-content-center"
-              >
-                <div class="w-75">
+              <div class="col-md-6 pt-4 d-flex justify-content-center">
+                <div
+                  class="w-75 d-flex justify-content-center flex-column gap-2"
+                >
                   <button
-                    class="btn btn-info px-4 rounded-1 w-100 mb-1"
+                    class="btn btn-info px-4 rounded-2 w-100 mb-1"
                     data-bs-toggle="modal"
                     data-bs-target="#newCustomerModal"
                   >
                     New Customer
                   </button>
-                  <button class="btn btn-warning px-4 rounded-1 w-100">
+                  <button class="btn btn-warning px-4 rounded-2 w-100">
                     View All Customers
                   </button>
                 </div>
@@ -149,26 +150,27 @@
             <div class="row button-set m-auto">
               <div class="col-12 px-3">
                 <div
-                  class="p-md-3 py-3 d-flex justify-content-md-start justify-content-center gap-1"
+                  class="p-md-3 py-3 d-flex justify-content-md-start justify-content-center flex-wrap gap-3"
                 >
-                  <button class="btn btn-danger px-4 rounded-1">Delete</button>
+                  <button class="btn btn-danger px-4 rounded-2">Delete</button>
                   <button
-                    class="btn btn-info text-white px-4 rounded-1"
+                    class="btn btn-info text-white px-4 rounded-2"
                     data-bs-toggle="modal"
                     data-bs-target="#updateCustomerModal"
                   >
                     Update
                   </button>
-                  <button class="btn btn-success text-white px-4 rounded-1">
+                  <button class="btn btn-success text-white px-4 rounded-2">
                     Clear
                   </button>
                 </div>
               </div>
             </div>
-            <div class="row table-content m-auto">
+
+            <div class="row table-content mt-4">
               <div class="col-12">
                 <div class="table-responsive text-center">
-                  <table class="table table-hover table-striped-columns">
+                  <table class="table table-hover">
                     <thead>
                       <tr>
                         <th scope="col">Customer ID</th>

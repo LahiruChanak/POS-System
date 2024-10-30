@@ -16,8 +16,6 @@ textarea {
 }
 
 .nav-item a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   border-color: rgba(0, 128, 0, 0.315) !important;
 }
@@ -46,57 +44,8 @@ td {
 }
 
 /* //////////// */
-.flex-container {
-  /* display: flex;
-  gap: 20px;
-  padding: 0 15px;
-  flex-wrap: wrap; */
-}
-
-.flex-item {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
-}
-
-.total-section {
-  padding: 15px;
-  background-color: #f8f9fa;
-  border-radius: 5px;
-}
-
-.payment-section {
-  padding: 15px;
-  background-color: #f8f9fa;
-  border-radius: 5px;
-  margin-top: auto;
-}
-
-.item-select-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .item-select-content {
   flex: 1;
-}
-
-.item-select-button {
-  margin-top: auto;
-}
-
-.table thead th {
-  background-color: #28a745;
-  color: white;
-}
-
-.btn-success {
-  width: 100%;
-}
-
-.table-section {
-  padding: 0 15px;
 }
 
 @media (max-width: 992px) {

@@ -52,3 +52,9 @@ td {
     flex: 100%;
   }
 }
+
+.item-table {
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
